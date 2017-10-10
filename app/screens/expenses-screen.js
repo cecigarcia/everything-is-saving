@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Body, Container, Content, Header, Text, Title, Right } from 'native-base';
 import { expenses } from "../model/fixtures/expenses";
+import { categories } from "../model/fixtures/expenses-categories";
 import ExpensesList from "../components/expenses/expenses-list";
 
 const ExpensesScreen = () => (
@@ -12,7 +13,7 @@ const ExpensesScreen = () => (
     </Header>
 
     <Content>
-      <ExpensesList expenses={expenses} />
+      <ExpensesList expenses={expenses} categories={categories} />
     </Content>
   </Container>
 );
