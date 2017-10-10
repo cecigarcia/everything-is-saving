@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Header, Body, Container, Content, Text, List, ListItem, Title } from 'native-base';
+import { incomes } from "../model/fixtures/incomes";
+import IncomesList from "../components/incomes/incomes-list";
 
 const IncomesScreen = () => (
   <Container>
@@ -10,17 +12,7 @@ const IncomesScreen = () => (
     </Header>
 
     <Content>
-      <List>
-        <ListItem>
-          <Text>Simon Mignolet</Text>
-        </ListItem>
-        <ListItem>
-          <Text>Nathaniel Clyne</Text>
-        </ListItem>
-        <ListItem>
-          <Text>Dejan Lovren</Text>
-        </ListItem>
-      </List>
+      <IncomesList incomes={incomes} />
     </Content>
   </Container>
 );
