@@ -87,3 +87,21 @@ To get it running in your own devices you just need to:
 * git clone https://github.com/cecigarcia/everything-is-saving.git
 * npm install
 * react-native run-ios / react-native run-android (in your previously opened simulator)
+
+
+## Graphql, Express, Apollo and friends
+
+npm install --save-dev express express-graphql
+npm install --save graphql
+
+Construct a schema, using GraphQL schema language for our entities income, expense and category as in this [server.js](https://github.com/cecigarcia/everything-is-saving/blob/master/server.js) 
+
+After install babel-cli vía `npm install --save-dev babel-cli` add this test server.js to package.json scripts like:
+
+"scripts": {
+	
+	"server": "babel-node server.js",
+
+}
+
+That will run a GraphQL API server at localhost:4000/graphql
