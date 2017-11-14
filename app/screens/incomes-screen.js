@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Header, Body, Container, Content, Text, List, ListItem, Title } from 'native-base';
-import { incomes } from "../model/fixtures/incomes";
+import { Header, Body, Container, Content, Title } from 'native-base';
+import { incomes } from "../model/fixtures";
 import IncomesList from "../components/incomes/incomes-list";
 
 const IncomesScreen = () => (

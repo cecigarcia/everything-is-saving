@@ -1,7 +1,6 @@
-import React, { Component } from "react";
-import { Body, Container, Content, Header, Text, Title, Right } from 'native-base';
-import { expenses } from "../model/fixtures/expenses";
-import { categories } from "../model/fixtures/expenses-categories";
+import React from "react";
+import { Body, Container, Content, Header, Title } from 'native-base';
+import { categories, expenses } from "../model/fixtures";
 import ExpensesList from "../components/expenses/expenses-list";
 
 const ExpensesScreen = () => (

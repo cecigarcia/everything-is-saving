@@ -98,10 +98,10 @@ Construct a schema, using GraphQL schema language for our entities income, expen
 
 After install babel-cli vía `npm install --save-dev babel-cli` add this test server.js to package.json scripts like:
 
+```
 "scripts": {
-	
-	"server": "babel-node server.js",
-
+  "server": "babel-node server.js",
 }
+```
 
 That will run a GraphQL API server at localhost:4000/graphql
